@@ -1,0 +1,19 @@
+{
+    "model_settings": {
+        "model_name": "gemini-2.5-flash-preview-09-2025",
+        "temperature": 0.2,
+        "max_output_tokens": 1024
+    },
+    "custom_policies": [
+        "Casing must be camelCase for all frontend-bound parameters (e.g., 'userId', not 'user_id' or 'UserID').",
+        "Security tokens MUST NOT be stored in local storage; use HttpOnly cookies.",
+        "All database query functions must include transaction management.",
+        "Function parameters must not exceed 5 arguments without explicit written justification in the PR description.",
+        "Avoid deeply nested if/else statements (Cyclomatic Complexity > 10) by favoring early returns (guard clauses)."
+    ],
+    "integration": {
+        "platform": "GitHub/GitLab",
+        "webhook_url": "/api/peerbot/review_trigger"
+    }
+}
+
